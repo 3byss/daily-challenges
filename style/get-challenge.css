@@ -1,0 +1,30 @@
+.go-back-btn {
+    display: flex;
+    margin: 30px 40px;
+    text-decoration-color: transparent;
+    width: 130px;
+    height: 60px;
+}
+
+.align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.challenge {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 70px;
+    font-size: 50px;
+}
+
+.body-text {
+    font-size: 30px;
+    font-weight: 600;
+}

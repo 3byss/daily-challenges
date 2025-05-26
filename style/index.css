@@ -1,0 +1,129 @@
+.creator-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 30px 40px;
+    background-color: rgb(24, 24, 24);
+    border-radius: 13px;
+    width: 160px;
+    height: 70px;
+    transition: all 0.4s ease;
+}
+
+.creator-name:hover {
+    background: linear-gradient(90deg, rgb(39, 136, 255) 0%, rgb(40, 40, 40) 100%);
+    background-size: 200% 100%;
+    background-position: -100% 0%;
+    color: black;
+    animation: creator-name-animation 0.3s ease forwards;
+}
+
+@keyframes creator-name-animation {
+    from {
+        background-position: -100% 0%;
+    } to {
+        background-position: 100% 100%;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(39, 39, 44);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: 50px 40px;
+    background-color: transparent;
+}
+
+.nav-bar li {
+    list-style: none;
+    background-color: transparent;
+}
+
+.nav-bar a {
+    text-align: center;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-bar a::after {
+    content: "";
+    display: block;
+    background: rgb(24, 127, 245);
+    width: 0%;
+    height: 3px;
+    border-radius: 2px;
+    opacity: 0;
+    transition: all 0.34s ease;
+}
+
+.nav-bar a:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.information h3 {
+    font-size: 48px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    background-color: rgb(37, 37, 41);
+    border-radius: 20px;
+    width: 350px;
+    transition: color 0.32s ease;
+}
+
+.information h3:hover {
+    color: rgb(55, 255, 55);
+}
+
+.information p {
+    font-size: 25px;
+    font-weight: 500;
+    width: 580px;
+}
+
+.info-span {
+    color: rgb(101, 255, 101);
+    font-weight: 700;
+    transition: font-size 0.25s ease;
+}
+
+.information p:hover .info-span {
+    font-size: 30px;
+}
+
+.get-challenge-btn {
+    font-weight: 600;
+    font-size: 33px;
+    margin-top: 70px;
+    position: relative;
+    top: 50px;
+    left: 40%;
+}
