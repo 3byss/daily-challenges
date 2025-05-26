@@ -1,0 +1,11 @@
+{
+  "name": "daily_challenge_website",
+  "version": "1.0.0",
+  "description": "A website for daily coding challenges.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "echo 'No build step yet'"
+  },
+  "author": "",
+  "license": "MIT"
+}
