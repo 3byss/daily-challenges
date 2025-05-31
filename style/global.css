@@ -34,3 +34,8 @@ button:hover {
     color: rgba(255, 255, 255, 0.733);
     transform: scale(1.16);
 }
+
+button:active {
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.681);
+    transform: scale(0.9);
+}

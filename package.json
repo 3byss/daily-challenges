@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A website for daily coding challenges.",
   "main": "src/index.js",
+  "type": "module",
   "scripts": {
     "start": "echo 'No build step yet'"
   },
