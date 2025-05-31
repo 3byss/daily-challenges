@@ -9,4 +9,4 @@ let challengeText = document.querySelector(".body-text");
 displayDots(challengeText);
 
 // Add an event listener to the button and run the getChallenge function
-challengeBtn.addEventListener('click', getChallenge);
+challengeBtn.addEventListener('click', () => getChallenge(challengeText));
