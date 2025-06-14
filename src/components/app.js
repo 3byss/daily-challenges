@@ -1,5 +1,5 @@
 // Import the functions from other files
-import { returnChallenge } from './setChallenge.js'
+import { returnChallenge } from './setChallenge.js';
 
 // This allows use to cancel the dot interval (the animation)
 let dotInterval;
@@ -18,7 +18,9 @@ function displayDots(element) {
         // The thing we want to repeat
         let dot = '.';
         // Using the element param we should change the text and += 1 to the numOfDots variable
-        element.textContent = `Click the button to get your challenge${dot.repeat(numOfDots)}`;
+        element.textContent = `Click the button to get your challenge${dot.repeat(
+            numOfDots
+        )}`;
         numOfDots++;
 
         // If statement to reset the count

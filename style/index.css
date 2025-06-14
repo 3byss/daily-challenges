@@ -13,7 +13,11 @@
 }
 
 .creator-name:hover {
-    background: linear-gradient(90deg, rgb(39, 136, 255) 0%, rgb(40, 40, 40) 100%);
+    background: linear-gradient(
+        90deg,
+        rgb(39, 136, 255) 0%,
+        rgb(40, 40, 40) 100%
+    );
     background-size: 200% 100%;
     background-position: -100% 0%;
     color: black;
@@ -23,7 +27,8 @@
 @keyframes creator-name-animation {
     from {
         background-position: -100% 0%;
-    } to {
+    }
+    to {
         background-position: 100% 100%;
     }
 }
@@ -60,19 +65,22 @@
 }
 
 .nav-bar a::after {
-    content: "";
+    content: '';
     display: block;
+    position: relative;
     background: rgb(24, 127, 245);
     width: 0%;
     height: 3px;
     border-radius: 2px;
     opacity: 0;
+    left: 50%;
     transition: all 0.34s ease;
 }
 
 .nav-bar a:hover::after {
     width: 100%;
     opacity: 1;
+    left: 0%;
 }
 
 .wrapper {
@@ -123,7 +131,4 @@
     font-weight: 600;
     font-size: 33px;
     margin-top: 70px;
-    position: relative;
-    top: 50px;
-    left: 40%;
 }

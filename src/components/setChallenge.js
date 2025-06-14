@@ -1,11 +1,11 @@
 // Import the async function from getDate.js
-import { lookAtDate } from './getDate.js'
-import { randomNumber } from './randomGenerator.js'
+import { lookAtDate } from './getDate.js';
+import { randomNumber } from './randomGenerator.js';
 
 let returnChallenge = () => {
     // Get the date
     let currentDate = new Date().getTime();
-    
+
     // This function should return a boolean value so I have to make it a variable to use later
     let canGetChallenge = lookAtDate(currentDate);
 
@@ -22,24 +22,28 @@ let returnChallenge = () => {
 
             Contributers -> If there is a better way to do this (make it more readable or something else) please make a pull request
         */
-        return `You have to wait ${Math.floor((86400000 - (currentDate - localStorage.getItem("lastDate"))) / 1000 / 3600)} hour(s) to get your next challenge`;
+        return `You have to wait ${Math.floor(
+            (86400000 - (currentDate - localStorage.getItem('lastDate'))) /
+                1000 /
+                3600
+        )} hour(s) to get your next challenge`;
     }
-}
+};
 
 let makeChallenge = () => {
     // From a table pick one of the three out random then set that to the variable 'challenge'
-    let challenges = ["quiz", "quote", "joke"];
+    let challenges = ['quiz', 'quote', 'joke'];
     let getChallenge = randomNumber(0, challenges.length);
     let challenge = challenges[getChallenge];
 
-    if (challenge == "quiz") {
-        return "You have to go and complete a quiz make sure you get 100%";
-    } else if (challenge == "quote") {
-        return "Go get me a random quote you find on the internet";
+    if (challenge == 'quiz') {
+        return 'You have to go and complete a quiz make sure you get 100%';
+    } else if (challenge == 'quote') {
+        return 'Go get me a random quote you find on the internet';
     } else {
-        return "Give me a joke and I will tell you if I laugh";
+        return 'Give me a joke and I will tell you if I laugh';
     }
-}
+};
 
 // Export all of the functions
 export { returnChallenge };

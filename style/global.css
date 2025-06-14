@@ -24,14 +24,14 @@ button {
     cursor: pointer;
     background-color: rgb(41, 44, 56);
     border-radius: 20px;
-    box-shadow: 8px 10px 30px rgb(19, 18, 18);
+    box-shadow: 8px 10px 10px rgb(19, 18, 18);
     text-decoration: none;
-    transition: all 0.3s ease
+    transition: all 0.3s ease;
 }
 
 button:hover {
     background-color: rgb(53, 58, 78);
-    box-shadow: 0px 0px 150px rgba(0, 0, 0, 0.681);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.681);
     color: rgba(255, 255, 255, 0.733);
     transform: scale(1.16);
 }
