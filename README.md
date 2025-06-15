@@ -2,8 +2,6 @@
 
 This is a website that will allow you to complete challenges given to you daily with a 24 hour wait period in between
 
-<a href="3byss.github.io/daily-challenges/">Daily Challenges Website</a>
-
 <h1>How to see and edit the github code</h1>
 
 You are going to want to follow these steps in your terminal 
