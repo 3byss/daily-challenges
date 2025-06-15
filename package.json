@@ -8,5 +8,8 @@
     "start": "echo 'No build step yet'"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "http": "^0.0.1-security"
+  }
 }

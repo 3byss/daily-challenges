@@ -23,10 +23,7 @@ let returnChallenge = () => {
             Contributers -> If there is a better way to do this (make it more readable or something else) please make a pull request
         */
         return `You have to wait ${Math.floor(
-            (86400000 - (currentDate - localStorage.getItem('lastDate'))) /
-                1000 /
-                3600
-        )} hour(s) to get your next challenge`;
+            (86400000 - (currentDate - localStorage.getItem('lastDate'))) / 1000 / 3600)} hour(s) to get your next challenge. Please come back later`;
     }
 };
 
@@ -36,6 +33,7 @@ let makeChallenge = () => {
     let getChallenge = randomNumber(0, challenges.length);
     let challenge = challenges[getChallenge];
 
+    // Check what challenge it is and return the string of it
     if (challenge == 'quiz') {
         return 'You have to go and complete a quiz make sure you get 100%';
     } else if (challenge == 'quote') {

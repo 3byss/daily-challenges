@@ -6,8 +6,22 @@ let dotInterval;
 
 // Get the challenge and return it to the index.js file
 function getChallenge(element) {
+    // Stop the dotInterval function
     clearInterval(dotInterval);
-    element.textContent = returnChallenge();
+
+    // Variabels for the challenge button and challenge the user has to complete
+    let challenge = returnChallenge();
+    let button = document.querySelector(".get-challenge-btn");
+
+    // Change the textcontent to the return value of returnChallenge()
+    element.textContent = challenge;
+
+    // Only if they user does not have to wait for the next challenge set the button to "Submit Challenge"
+    if (!challenge.trim().startsWith("You have to wait")) {
+        button.textContent = "Submit Challenge";
+    } else {
+        button.textContent = "Get Challenge"
+    }
 }
 
 // A little animation for when the website first loads
